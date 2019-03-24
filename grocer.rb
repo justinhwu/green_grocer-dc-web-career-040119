@@ -19,7 +19,7 @@ def apply_coupons(cart:[], coupons:[])
   newcart = {}
     cart.each do |a,b|
       coupons.each do |c|
-        if 
+        if a == c[:item] && a[:count] >= 
 
 end
 

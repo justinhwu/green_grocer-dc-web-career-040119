@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
       if b == d[:item] && c[:count] >= d[:num]
         c[:count] = c[:count] = d[:num]
         if newcart.has_key?("#{b} W/COUPON")
-          newcart["#{b} W/COUPON"]
+          newcart["#{b} W/COUPON"][:count]
 end
 
 def apply_clearance(cart)

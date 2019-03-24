@@ -19,7 +19,8 @@ def apply_coupons(cart, coupons)
   newcart = {}
   cart.each do |a|
     a.each do |b,c|
-      coupons.each do |d,e|
+      coupons.each do |d|
+        d.each do |e,f|
         
       if b == d[:item] && c[:count] >= d[:num]
         c[:count] = c[:count] = d[:num]

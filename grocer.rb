@@ -45,8 +45,7 @@ def apply_clearance(cart)
     else
       newcart[a][:price] = b[:price]
     end
-    newcart[a][:clearance] = b[:clearance]
-    newcart[a][:count] = b[:count]
+    
 end
 
 def checkout(cart, coupons)

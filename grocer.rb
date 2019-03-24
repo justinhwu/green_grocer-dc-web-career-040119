@@ -25,7 +25,7 @@ def apply_coupons(cart, coupons)
         if newcart.has_key?("#{b} W/COUPON")
           newcart["#{b} W/COUPON"][:count] +=1
         else
-          
+          newcart[]
 end
 
 def apply_clearance(cart)

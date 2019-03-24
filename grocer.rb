@@ -17,20 +17,7 @@ end
 def apply_coupons(cart:[], coupons:[])
   # code here
   newcart = {}
-  cart.each do |a|
-    a.each do |b,c|
-      coupons.each do |d|
-        d.each do |e,f|
-      if b == d[:item] && c[:count] >= e[:num]
-        c[:count] = c[:count] = e[:num]
-        if newcart.has_key?("#{b} W/COUPON")
-          newcart["#{b} W/COUPON"][:count] +=1
-        else
-          newcart["#{b} W/COUPON"] = {:price=> e[:cost], :clearance => c[:clearance], :count=> 1}
-        end
-      end
-    end
-  end
+  
 end
 end
 end

@@ -40,6 +40,7 @@ def apply_clearance(cart)
     newcart[a] = {}
     if b[:clearance] == true
       newcart[a][:price] = b[:price] * 0.2
+    else
       
 end
 

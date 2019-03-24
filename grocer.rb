@@ -25,7 +25,9 @@ def apply_coupons(cart:[], coupons:[])
             newcart["#{a} W/COUPON"][:count] +=1
           else
             newcart["#{a} W/COUPON"] = {:price => c[:cost], :clearance => b[:clearance], :count => 1}
-
+          end
+        end
+      end
 end
 
 def apply_clearance(cart)

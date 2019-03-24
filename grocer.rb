@@ -17,7 +17,7 @@ end
 def apply_coupons(cart:[], coupons:[])
   # code here
   newcart = {}
-    cart.each do 
+    cart.each do |a,b|
 
 end
 

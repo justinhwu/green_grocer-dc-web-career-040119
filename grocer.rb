@@ -39,7 +39,7 @@ def apply_clearance(cart)
   cart.each do |a,b|
     newcart[a] = {}
     if b[:clearance] == true
-      newcart[]
+      newcart[a][:price] = 
 end
 
 def checkout(cart, coupons)

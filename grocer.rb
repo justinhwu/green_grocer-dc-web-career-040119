@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
     a.each do |b,c|
       coupons.each do |d|
       if b == d[:item] && c[:count] >= d[:num]
-        c[:count]
+        c[:count] = c[]
 end
 
 def apply_clearance(cart)

@@ -23,6 +23,8 @@ def apply_coupons(cart:[], coupons:[])
           b[:count] = b[:count] - c[:num]
           if newcart.has_key?("#{a} W/COUPON")
             newcar["#{a} W/COUPON"][:count] +=1
+          else
+            
 
 end
 

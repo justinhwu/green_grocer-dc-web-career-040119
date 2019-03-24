@@ -38,6 +38,8 @@ def apply_clearance(cart)
   newcart = {}
   cart.each do |a,b|
     newcart[a] = {}
+    newcart[a][:clearance] = b[:clearance]
+    newcart[a][:count] = b[:count]
     if b[:clearance] == true
       newcart[a][:price] = b[:price] * 0.2
     else
